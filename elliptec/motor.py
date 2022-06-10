@@ -30,6 +30,7 @@ class Motor():
             self.pulse_per_rev = self.info['Pulse/Rev']
             self.serial_no = self.info['Serial No.']
             self.motor_type = self.info['Motor Type']
+            #do things
         
     def send_instruction(self, instruction, message=None):
         response = self.controller.send_instruction(
